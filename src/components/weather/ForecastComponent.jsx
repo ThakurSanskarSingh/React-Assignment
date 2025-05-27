@@ -2,7 +2,6 @@ import React from 'react';
 import { useWeather } from '../../context/WeatherContext.jsx';
 import { getWeatherIcon } from '../../utils/weatherIcons.js';
 
-// Forecast Component
 const ForecastComponent = () => {
   const { forecast, unit } = useWeather();
 

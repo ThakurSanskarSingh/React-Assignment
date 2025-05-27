@@ -9,7 +9,7 @@ export const WeatherProvider = ({ children }) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [lastSearchedCity, setLastSearchedCity] = useState('');
-  const [unit, setUnit] = useState('metric'); // metric for Celsius, imperial for Fahrenheit
+  const [unit, setUnit] = useState('metric');
 
   return (
     <WeatherContext.Provider value={{

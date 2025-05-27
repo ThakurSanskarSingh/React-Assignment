@@ -1,6 +1,5 @@
 import React from 'react';
 
-// Error Component
 const ErrorComponent = ({ error }) => {
   if (!error) return null;
 

@@ -1,9 +1,8 @@
-// src/services/weatherService.js
-// const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
-// const BASE_URL = process.env.REACT_APP_API_BASE_URL || 'https://api.openweathermap.org/data/2.5';
+const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
+const BASE_URL = process.env.REACT_APP_API_BASE_URL || 'https://api.openweathermap.org/data/2.5';
 
-export const API_KEY = '5b8628c26dba5db20294272370bc2e60'; // Replace with actual API key
-export const BASE_URL = 'https://api.openweathermap.org/data/2.5';
+// export const API_KEY = '5b8628c26dba5db20294272370bc2e60'; // Replace with actual API key
+// export const BASE_URL = 'https://api.openweathermap.org/data/2.5';
 
 class weatherService {
   async getCurrentWeather(city, unit = 'metric') {

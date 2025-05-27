@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Clock } from 'lucide-react';
 import { useWeather } from '../../context/WeatherContext.jsx';
 
-// Last Updated Component
+
 const LastUpdated = () => {
   const [lastUpdated, setLastUpdated] = useState(new Date());
   const { currentWeather } = useWeather();

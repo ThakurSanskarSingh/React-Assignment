@@ -2,7 +2,6 @@ import React from 'react';
 import { useWeather } from '../../context/WeatherContext.jsx';
 import  weatherService from '../../services/weatherService.js';
 
-// Unit Toggle Component
 const UnitToggle = () => {
   const { unit, setUnit, lastSearchedCity, setLoading, setError, setCurrentWeather, setForecast } = useWeather();
 

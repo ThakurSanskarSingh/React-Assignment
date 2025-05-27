@@ -10,11 +10,9 @@ import WeatherInfo from '../weather/WeatherInfo.jsx';
 import ForecastComponent from '../weather/ForecastComponent.jsx';
 import LastUpdated from '../common/LastUpdated.jsx';
 
-// Main Dashboard Component
 const WeatherDashboard = () => {
   const { setCurrentWeather, setForecast, setLastSearchedCity, unit, setLoading, setError, error } = useWeather();
 
-  // Auto-refresh every 30 seconds
   useEffect(() => {
     const interval = setInterval(async () => {
       const savedCity = storage.load('lastSearchedCity');
@@ -31,7 +29,6 @@ const WeatherDashboard = () => {
     return () => clearInterval(interval);
   }, [setCurrentWeather, unit]);
 
-  // Load last searched city on mount
   useEffect(() => {
     const loadInitialData = async () => {
       const savedCity = storage.load('lastSearchedCity');
@@ -44,7 +41,6 @@ const WeatherDashboard = () => {
           setCurrentWeather(savedWeather.value);
         }
 
-        // Fetch fresh data
         setLoading(true);
         try {
           const [weatherData, forecastData] = await Promise.all([

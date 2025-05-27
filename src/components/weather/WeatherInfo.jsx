@@ -3,7 +3,6 @@ import { MapPin, Thermometer, Droplets, Wind, Eye } from 'lucide-react';
 import { useWeather } from '../../context/WeatherContext.jsx';
 import { getWeatherIcon } from '../../utils/weatherIcons.js';
 
-// Weather Info Component
 const WeatherInfo = () => {
   const { currentWeather, loading, unit } = useWeather();
 

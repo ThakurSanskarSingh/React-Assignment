@@ -4,7 +4,6 @@ import { useWeather } from '../../context/WeatherContext.jsx';
 import weatherService from '../../services/weatherService.js'; 
 import { storage } from '../../utils/storage.js';
 
-// Search Component
 const SearchComponent = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const { setLoading, setError, setCurrentWeather, setForecast, setLastSearchedCity, unit } = useWeather();
